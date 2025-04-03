@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hausmeisterservice am Dom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Hintergrundbild-URL') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 100px 50px 50px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .service-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .service-item img {
+            width: 80px;
+            height: 80px;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        .button {
+            display: inline-block;
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Startseite</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#kontakt">Kontakt</a>
+    </div>
+    
+    <div class="container">
+        <h1>Hausmeisterservice am Dom</h1>
+        <p>Zuverlässig und kompetent</p>
+        <ul class="services" id="leistungen">
+            <li class="service-item">
+                <img src="Gebäudereinigung-Icon-URL" alt="Gebäudereinigung">
+                <p>Gebäudereinigung</p>
+            </li>
+            <li class="service-item">
+                <img src="Grünpflege-Icon-URL" alt="Grün- und Außenpflege">
+                <p>Grün- und Außenpflege</p>
+            </li>
+            <li class="service-item">
+                <img src="Winterdienst-Icon-URL" alt="Winterdienst">
+                <p>Winterdienst</p>
+            </li>
+            <li class="service-item">
+                <img src="Haushaltsauflösung-Icon-URL" alt="Haushaltsauflösungen">
+                <p>Haushaltsauflösungen</p>
+            </li>
+        </ul>
+        <div class="contact" id="kontakt">
+            <p>Kontaktieren Sie uns:</p>
+            <p>+49 163 25 28 315</p>
+            <a href="tel:+491632528315" class="button">Jetzt anrufen</a>
+        </div>
+    </div>
+</body>
+</html>
