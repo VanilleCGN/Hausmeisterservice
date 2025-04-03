@@ -8,7 +8,42 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
             margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .icon-list {
@@ -24,17 +59,64 @@
         .icon-list i {
             margin-right: 10px;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Willkommen auf meiner Seite!</h1>
-    
-    <ul class="icon-list">
-        <li><i class="fas fa-home"></i> Startseite</li>
-        <li><i class="fas fa-envelope"></i> Kontakt</li>
-        <li><i class="fas fa-info-circle"></i> Über uns</li>
-    </ul>
+    <header>
+        <h1>Willkommen auf meiner Webseite!</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Startseite</a>
+        <a href="#about">Über uns</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <section id="home">
+        <h2>Startseite</h2>
+        <p>Willkommen auf meiner persönlichen Webseite. Hier finden Sie alle wichtigen Informationen und Links zu meinen Services.</p>
+        <ul class="icon-list">
+            <li><i class="fas fa-home"></i> Startseite</li>
+            <li><i class="fas fa-envelope"></i> Kontakt</li>
+            <li><i class="fas fa-info-circle"></i> Über uns</li>
+            <li><i class="fas fa-cogs"></i> Unsere Services</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Wir sind ein kleines Team von Webentwicklern, die sich darauf spezialisiert haben, kreative Lösungen für Ihre Bedürfnisse zu entwickeln.</p>
+    </section>
+
+    <section id="services">
+        <h2>Unsere Services</h2>
+        <p>Wir bieten eine Vielzahl an Dienstleistungen an:</p>
+        <ul>
+            <li>Webdesign</li>
+            <li>SEO-Optimierung</li>
+            <li>App-Entwicklung</li>
+            <li>Beratung für Online-Marketing</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Sie können uns unter folgender E-Mail-Adresse erreichen:</p>
+        <p><strong>kontakt@meinewebseite.de</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Meine Webseite. Alle Rechte vorbehalten.</p>
+    </footer>
 
 </body>
 </html>
